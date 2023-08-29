@@ -1,14 +1,4 @@
 "use strict";
-// Question; Remove Even Number from an array
-// let i = 0;
-// while (i < numbers.length) {
-//   if (numbers[i] % 2 === 0) {
-//     numbers.splice(i, 1);
-//   } else {
-//     i++;
-//   }
-// }
-// console.log(numbers);
 // MAP => return same length array
 // FILTER => return same length or less
 // FOREACH => returns nothing
@@ -53,3 +43,10 @@ let names = ["abu hurairah", "naveed", "ali"];
 names.forEach((data) => {
     console.log(`Your class on sundy will be onTime ${data}`);
 });
+let num = [2, 3, 4, 5, 6, 8, 5, 8];
+let Enum = num.filter((item) => {
+    if (item % 2 == 0) {
+        return item;
+    }
+});
+console.log(Enum);
