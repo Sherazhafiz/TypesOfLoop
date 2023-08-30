@@ -54,11 +54,12 @@ names.forEach((data) => {
   console.log(`Your class on sundy will be onTime ${data}`);
 });
 
-let num:number[]=[2,3,4,5,6,8,5,8];
+let num:number[]=[2,-3,4,-5,6,-8,5,8];
 let Enum:number[]=num.filter((item)=>{
-  if(item%2==0){
+  if(item>0){
     return item;
   }
 });
 console.log(Enum);
+
 
