@@ -63,3 +63,19 @@ let Enum:number[]=num.filter((item)=>{
 console.log(Enum);
 
 
+
+// Define an array of numbers
+const number: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// Define a callback function to filter even numbers
+function isEven(num: number): boolean {
+    return num % 2 === 0;
+}
+
+// Use the filter method to create a new array containing even numbers
+const evenNumbers = numbers.filter(isEven);
+
+// Log the result
+console.log(evenNumbers); // Output: [2, 4, 6, 8, 10]
+
+
