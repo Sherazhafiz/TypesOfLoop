@@ -39,7 +39,7 @@ let oddNumbers = numbers.filter((item) => {
   }
 });
 
-console.log(oddNumbers);
+console.log("Odd numbers : ",oddNumbers);
 console.log("Original Array", numbers);
 
 // let newArr = numbers.forEach((data) => {

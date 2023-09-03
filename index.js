@@ -28,12 +28,12 @@ console.log("🚀 ~ file: index.ts:79 ~ updatedArray:", updatedArray);
 // let numb = func();
 // console.log("🚀 ~ file: index.ts:92 ~ numb:", numb);
 // Removing the even numbers
-let oddNumbers = numbers.filter((item) => {
+let oddNumbers = numbers.map((item) => {
     if (item % 2 !== 0) {
-        return true;
+        return item;
     }
 });
-console.log(oddNumbers);
+console.log("Odd numbers : ", oddNumbers);
 console.log("Original Array", numbers);
 // let newArr = numbers.forEach((data) => {
 //   console.log(data);
@@ -45,8 +45,18 @@ names.forEach((data) => {
 });
 let num = [2, -3, 4, -5, 6, -8, 5, 8];
 let Enum = num.filter((item) => {
-    if (item < 0) {
+    if (item > 0) {
         return item;
     }
 });
 console.log(Enum);
+// Define an array of numbers
+const number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// Define a callback function to filter even numbers
+function isEven(num) {
+    return num % 2 === 0;
+}
+// Use the filter method to create a new array containing even numbers
+const evenNumbers = numbers.filter(isEven);
+// Log the result
+console.log(evenNumbers); // Output: [2, 4, 6, 8, 10]
